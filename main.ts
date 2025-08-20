@@ -1,163 +1,150 @@
-// // // let arr:number[] = []
-
-// // function calc(a:number, b:number, c:number):number[] {
-// //     let calced:number = a+b+c
-// //     return [calced]
-// // }
-
-
-// // console.log(calc(3,2,5));
- 
-
-// // //  2-task
-
-// // let pr:string | null =  prompt("Ismingizni kiriting")
-
-// // console.log([pr]);
-
-
-
-
-// let imslar:{id:number, name:string, age:number}[] = [
-//     {id:1 , name:"Jamshid" , age:21},
-//     {id:2 , name:"Eshmat" , age:22},
-//     {id:3 , name:"Toshmat" , age:23},
-//     {id:4 , name:"Jo'shqin" , age:24},
-// ]
-// let findIsm:string | null = prompt("Ism kirit")
-// function findUser(params:type) {
-    
+// // 1.
+// for (let i: number = 0; i <= 10; i++) {
+//   console.log(i)
 // }
 
+// // 2.
+// for (let i: number = 1; i <= 50; i++) {
+//   if (i % 2 === 0) console.log(i)
+// }
 
-// task-1
+// // 3.
+// for (let i: number = 1; i <= 20; i++) {
+//   if (i % 2 !== 0) console.log(i)
+// }
 
-// 1.
-const a1:number = 10
-const b1:number = 20
-const c1:number = 30
-console.log("O'rta arifmetik:", (a1 + b1 + c1) / 3)
+// // 4.
+// let sumEven: number = 0
+// for (let i: number = 1; i <= 50; i++) {
+//   if (i % 2 === 0) sumEven += i
+// }
+// console.log("Juftlar yig'indisi:", sumEven)
 
-// 2.
-const a2:number = 15
-const b2:number = 25
-console.log("Kattasi:", a2 > b2 ? a2 : b2)
+// // 5.
+// const n5: number = 30
+// for (let i: number = 1; i <= n5; i++) {
+//   if (i % 3 === 0) console.log(i)
+// }
 
-// 3.
-const a3:number = -7
-console.log(a3 > 0 ? "Musbat" : a3 < 0 ? "Manfiy" : "0")
+// // 6. 
+// let count5: number = 0
+// for (let i: number = 1; i <= n5; i++) {
+//   if (i % 5 === 0) count5++
+// }
+// console.log("5 ga bo'linadiganlar soni:", count5)
 
-// 4.
-const a4:number = 1234
-console.log("Xonalar soni:", a4.toString().length)
+// // 7. 
+// const arr7: number[] = [23, 12, 43, 12, 66, 23, 98, 1]
+// arr7.forEach((val: number, idx: number) => console.log(idx))
 
-// 5.
-const a5:number = 13
-console.log(a5 % 2 === 0 ? "Juft" : "Toq")
+// // 8. 
+// arr7.forEach((val: number) => console.log(val))
 
-// 6.
-const a6:number = 8
-console.log(a6 % 2 === 0 ? a6 + 1 : a6 - 1)
+// // 9.
+// let sum9: number = 0
+// arr7.forEach((val: number) => sum9 += val)
+// console.log("Array yig'indisi:", sum9)
 
-// 7.
-const a7:number = 987
-console.log("Xonalar soni:", a7.toString().length)
-console.log(a7 % 2 === 0 ? "Juft" : "Toq")
+// // 10. 
+// console.log("Elementlar soni:", arr7.length)
 
-// 8.
-const a8:number = 12
-console.log(a8 % 2 === 0 ? "Qoldiq yo'q" : "Qoldiq:" + (a8 % 2))
+// // 11. 
+// const names: string[] = ["Jasur", "Behruz", "Bahodir", "Jamshid", "Anvar"]
+// const findName: string = "Jamshid"
+// console.log(names.includes(findName) ? "Bor" : "Yo'q")
 
-// 9.
-const a9:number = 5
-const b9:number = 10
-const c9:number = 15
-console.log("O'rtacha:", (a9 + b9 + c9) / 3)
+// // 12. 
+// const arr12: number[] = [1,2,3,4,5,6,7,8]
+// arr12.forEach((val: number) => {
+//   if (val % 2 === 0) console.log(val)
+// })
 
-// 10.
-const a10:number = 15
-if (a10 % 3 === 0 && a10 % 5 === 0) {
-  console.log("FizzBuzz")
-} else if (a10 % 3 === 0) {
-  console.log("Fizz")
-} else if (a10 % 5 === 0) {
-  console.log("Buzz")
-} else {
-  console.log(a10)
-}
+// // 13. 
+// let sumEven13: number = 0
+// let sumOdd13: number = 0
+// arr12.forEach((val: number) => {
+//   if (val % 2 === 0) sumEven13 += val
+//   else sumOdd13 += val
+// })
+// console.log("Juftlar yig'indisi:", sumEven13)
+// console.log("Toqlar yig'indisi:", sumOdd13)
 
-export {}
+// // 14. 
+// console.log("6 indexi:", arr12.indexOf(6))
 
+// // 15. 
+// const arr15: number[] = [-1, 2, -3, 4, -5, 6, -7]
+// const positiveArr15: number[] = arr15.map((val: number) => Math.abs(val))
+// console.log("Musbat array:", positiveArr15)
 
-
-
-// // // // task-2
-
-// 1. 
-const num1: number = 47
-const tens: number = Math.floor(num1 / 10)
-const ones: number = num1 % 10
-console.log("Kattasi:", tens > ones ? tens : ones)
-
-// 2.
-const num2: number = 12
-console.log(num2 % 2 === 0 ? num2 + 1 : num2 - 1)
-
-// 3.
-const num3: number = 14
-console.log(num3 % 3 === 0 ? "Karrali" : "Karrali emas")
-
-// 4. 
-const c4: number = 2
-const b4: number = 7
-
-const min4: number = Math.min(c4, b4)
-const max4: number = Math.max(c4, b4)
-const two: number = min4 * 10 + max4
-
-console.log("Natija:", two)
+// //
 
 
-// 5.
-const num5: number = 12345
-console.log("Xonalar soni:", num5.toString().length)
+// // 1. 
+// type Employee = {
+//   id: number;
+//   name: string;
+//   salary: number;
+//   department: string;
+// };
 
-// 6.
-const num6: number = -20
-console.log(num6 > 0 ? "Musbat" : num6 < 0 ? "Manfiy" : "0")
-
-// 7. 
-const num7: number = -11
-console.log(num7 % 2 === 0 ? "Juft" : "Toq")
-console.log(num7 > 0 ? "Musbat" : num7 < 0 ? "Manfiy" : "0")
-
-// 8. 
-const birthYear: number = 2000
-const currentYear: number = 2025
-const age: number = currentYear - birthYear
-console.log("Yosh:", age)
-
-// 9. 
-const x9: number = 10
-const y9: number = 12
-console.log(x9 % 3 === 0 ? "x9 Ha" : y9 % 3 === 0 ? "y9 Ha" : "Yo'q")
+// const employees: Employee[] = [
+//   { id: 1, name: "Ali", salary: 1200, department: "IT" },
+//   { id: 2, name: "Vali", salary: 900, department: "HR" },
+//   { id: 3, name: "Sami", salary: 1500, department: "IT" },
+// ];
+// const itEmployees = employees.filter(emp => emp.department === "IT");
+// console.log("IT xodimlari:", itEmployees);
+// const maxSalary = Math.max(...employees.map(emp => emp.salary));
+// const richest = employees.find(emp => emp.salary === maxSalary);
+// console.log("Eng katta maosh oluvchi:", richest);
 
 
-// 10
-const d1: number = 8
-const d2: number = 7
-const d3: number = 1
 
-const arr:number[] = [d1, d2, d3]
-arr.sort((a, b) => a - b)
-const threeDigit:number = arr[0]!*100 + arr[1]!*10 + arr[2]!        // ??? 
+// // 2.
+// type Product = {
+//   id: number;
+//   name: string;
+//   price: number;
+//   stock: number;
+// };
 
-console.log("Natija:", threeDigit)
+// const products: Product[] = [
+//   { id: 1, name: "Laptop", price: 500, stock: 10 },
+//   { id: 2, name: "Phone", price: 300, stock: 3 },
+//   { id: 3, name: "Tablet", price: 200, stock: 0 },
+// ];
 
 
-// 11. 
-const num11: number = 17
-const remainder: number = num11 % 2
-console.log(remainder === 0 ? "Qoldiq juft" : "Qoldiq toq")
+// const lowStock = products.filter(p => p.stock <= 5);
+// console.log("Stock ≤ 5:", lowStock);
+// const totalValue = products.reduce((acc, p) => acc + p.price * p.stock, 0);
+// console.log("Umumiy qiymat:", totalValue);
 
+
+
+// // 3.
+type Student = {
+  id: number;
+  name: string;
+  grades: number[];
+};
+
+const students: Student[] = [
+  { id: 1, name: "Sobir", grades: [90, 85, 88] },
+  { id: 2, name: "Dilshod", grades: [70, 75, 80] },
+  { id: 3, name: "Madina", grades: [95, 92, 90] },
+];
+
+students.forEach(s => {
+  const avg = s.grades.reduce((a, b) => a + b, 0) / s.grades.length;
+  console.log(`${s.name} o'rtacha baho:`, avg.toFixed(2));
+});
+
+const bestStudent = students.reduce((best, curr) => {
+  const avgBest = best.grades.reduce((a, b) => a + b, 0) / best.grades.length;
+  const avgCurr = curr.grades.reduce((a, b) => a + b, 0) / curr.grades.length;
+  return avgCurr > avgBest ? curr : best;
+});
+console.log("Eng yaxshi student:", bestStudent);
 export {}
